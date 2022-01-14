@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontController!
+{% endblock %}
+
+{% block body %}
+
+	<div class="row my-5">
+		<div class="col-9">
+			<div class="row text-center">
+				{% for i in 1..2 %}
+					<div class="col-6">
+						<div class="card bg-light mb-3">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-4">3 pièces</div>
+									<div class="col-4">6 🛏️</div>
+									<div class="col-4">📶</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<h2 class="card-title">
+									<a href="{{ path('show') }}">appart
+										{{ loop.index }}</a>
+								</h2>
+								<a href="{{ path('show') }}">
+									<img src="../img/header.jpg" alt="" style="max-width: 10em">
+									<a/>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a href="{{ path('show') }}">voir la description</a>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-3">
+				{% include 'front/shared/sideRight/_sideRight.html.twig' %}
+			</div>
+
+		</div>
+	{% endblock %}

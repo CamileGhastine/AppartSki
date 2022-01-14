@@ -1,0 +1,34 @@
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+{% endblock %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid mx-5">
+		<a class="navbar-brand" href="{{ path('index') }}"><img class="skieur" src="../img/skieur.png" alt=""></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarColor02">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Appartements</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="">Arcosses</a>
+						<a class="dropdown-item" href="">Roc Blanc</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">Saint-Francois</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Connexion</a>
+				</li>
+			</ul>
+			<button type="button" class="btn btn-info">St François en hiver</button>
+			<button type="button" class="btn btn-primary">St François en été</button>
+		</div>
+	</div>
+</nav>
